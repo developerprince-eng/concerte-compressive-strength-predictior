@@ -21,7 +21,7 @@ digraph "Graph" {
 		8
 		rank=same
 		999 [label="Input Units: 8
-Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: elu" color=white fontcolor=black fontsize=18 shape=rectangle]
 	}
 	1 -> 9
 	2 -> 9
@@ -91,7 +91,7 @@ Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		888 [label="Units: 8
-Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: elu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		9 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		10 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		11 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -185,7 +185,7 @@ Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		161616 [label="Units: 16 (+6 more)
-Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: elu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		17 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		18 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		19 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -533,7 +533,7 @@ Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		464646 [label="Units: 48 (+38 more)
-Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: elu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		47 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		48 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		49 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -649,7 +649,7 @@ Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		565656 [label="Units: 48 (+38 more)
-Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: elu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		57 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		58 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		59 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -997,7 +997,7 @@ Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		868686 [label="Units: 16 (+6 more)
-Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: elu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		87 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		88 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		89 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -1022,7 +1022,7 @@ Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 	subgraph cluster_output {
 		node [color="#2ecc71" fontcolor="#2ecc71" shape=circle style=filled]
 		969696 [label="Output Units: 1
-Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: elu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		labeljust=1

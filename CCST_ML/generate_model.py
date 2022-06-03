@@ -22,15 +22,15 @@ class generate_model:
         tb_callbacks = tf.keras.callbacks.TensorBoard(log_dir="logs/relu_sequential_model", histogram_freq=1)
 
         model = keras.Sequential([
-                    keras.layers.Dense(8, activation=tf.nn.relu6),
-                    keras.layers.Dense(16, activation=tf.nn.relu6),
+                    keras.layers.Dense(8, activation=tf.nn.elu),
+                    keras.layers.Dense(16, activation=tf.nn.elu),
                     keras.layers.Dense(32, activation=tf.nn.relu6),
                     keras.layers.Dense(40, activation=tf.nn.relu6),
-                    keras.layers.Dense(48, activation=tf.nn.relu6),
-                    keras.layers.Dense(48, activation=tf.nn.relu6),
+                    keras.layers.Dense(48, activation=tf.nn.elu),
+                    keras.layers.Dense(48, activation=tf.nn.elu),
                     keras.layers.Dense(40, activation=tf.nn.relu6),
                     keras.layers.Dense(32, activation=tf.nn.relu6),
-                    keras.layers.Dense(16, activation=tf.nn.relu6),
+                    keras.layers.Dense(16, activation=tf.nn.elu),
                     keras.layers.Dense(1)
                 ])
 
