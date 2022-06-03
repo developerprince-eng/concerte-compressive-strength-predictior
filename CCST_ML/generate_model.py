@@ -70,7 +70,7 @@ class generate_model:
     def model2_thread(train_labels, train_data, test_labels, test_data):
             tb_callbacks2 = tf.keras.callbacks.TensorBoard(log_dir="logs/relu_model", histogram_freq=1)
 
-            inputs = tf.keras.Input(shape=(8,))
+            inputs = tf.keras.Input(shape=(8))
             x = tf.keras.layers.Dense(16, activation=tf.nn.relu6)(inputs)
             x1 = tf.keras.layers.Dense(16, activation=tf.nn.relu6)(x)
             x2 = tf.keras.layers.Dense(32, activation=tf.nn.relu6)(x1)
