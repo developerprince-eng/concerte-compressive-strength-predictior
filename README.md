@@ -46,6 +46,10 @@ For which a load is then applied to dry concrete until it raptures or breaks. Th
 
 in order to make use and test the model run
 
+Recommended model is a 9 layer Diamond model:
+
+![model](graph.png)
+
 ## Requirements
 
 1. python 3.6
