@@ -37,7 +37,7 @@ class GENERATE_MODEL:
         model.compile(loss='mean_squared_logarithmic_error',
                         optimizer='adam',
                         metrics=['mae'])
-        model.fit(x=train_data.values, y=train_labels.values,batch_size=10, epochs=10, callbacks=[tb_callbacks])
+        model.fit(x=train_data.values, y=train_labels.values,batch_size=10, epochs=1000, callbacks=[tb_callbacks])
 
         model.summary()
         visualizer(model, format='png', view=True)

@@ -21,7 +21,7 @@ digraph "Graph" {
 		8
 		rank=same
 		999 [label="Input Units: 8
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 	}
 	1 -> 9
 	2 -> 9
@@ -91,7 +91,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		888 [label="Units: 8
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		9 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		10 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		11 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -185,7 +185,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		161616 [label="Units: 16 (+6 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		17 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		18 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		19 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -301,7 +301,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		262626 [label="Units: 32 (+22 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		27 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		28 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		29 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -417,7 +417,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		363636 [label="Units: 40 (+30 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		37 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		38 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		39 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -533,7 +533,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		464646 [label="Units: 48 (+38 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		47 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		48 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		49 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -649,7 +649,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		565656 [label="Units: 48 (+38 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		57 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		58 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		59 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -765,7 +765,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		666666 [label="Units: 40 (+30 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		67 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		68 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		69 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -881,7 +881,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		767676 [label="Units: 32 (+22 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		77 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		78 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		79 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -997,7 +997,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		868686 [label="Units: 16 (+6 more)
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		87 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		88 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		89 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -1022,7 +1022,7 @@ Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 	subgraph cluster_output {
 		node [color="#2ecc71" fontcolor="#2ecc71" shape=circle style=filled]
 		969696 [label="Output Units: 1
-Activation: leaky_relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: relu6" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		labeljust=1
