@@ -6,8 +6,8 @@ import os
 os.getcwd()
 os.listdir(os.getcwd())
 import sys
-import CCST_ML.create_dataset as csdata
-import CCST_ML.generate_model as cs
+import ccst_ml.create_dataset as csdata
+import ccst_ml.generate_model as cs
 
 def main():
 

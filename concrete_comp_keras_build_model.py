@@ -3,7 +3,7 @@
 
 from __future__ import print_function, absolute_import, division
 import pandas as pd
-import CCST_ML.generate_model as gm
+import ccst_ml.generate_model as ccst_ml
 import os
 os.getcwd()
 os.listdir(os.getcwd())
@@ -36,5 +36,5 @@ print(train_labels)
 print(test_data)
 print(test_labels)
 
-models = gm.GENERATE_MODEL()
+models = ccst_ml.generate_model()
 models.__generate__(train_labels=train_labels, train_data=train_data, test_labels=test_labels, test_data=test_data)

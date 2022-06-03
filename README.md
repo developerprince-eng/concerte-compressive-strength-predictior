@@ -9,11 +9,11 @@ Please Take Note the Project was compiled by: DeveloperPrince (Prince Kudzai Map
 
 You can utilize the solutions to improve your understanding in AI using TensorFlow
 
-# Note
+## Note
 
 The Solutions are not production ready, if you want to make production ready model please take note of the tensorflow documentation or contact DeveloperPrince
 
-# Guide
+## Guide
 
 The repository contains two regression based problems one is complete with a saved machine learning model ready for production use and the other is still a work in progress
 
@@ -43,9 +43,45 @@ For which a load is then applied to dry concrete until it raptures or breaks. Th
 
 in order to make use and test the model run
 
+## Requirements
+
+1. python 3.6
+2. graphviz (ensure this set up to be accessed globally on your machine)
+
+## Setup
+
+1. Create virtual environment
+
+```bash
+python3 -m venv dev
+```
+
+or
+
+```bash
+python -m venv dev
+```
+
+2. Activate virtual environment
+
+if using windows OS for development use the following
+
+```bash
+dev\Scripts\activate
+```
+
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run Model
+
 ## Commands
 ```bash
-python Concrete_Comp_Test_Beta.py
+python concrete_comp_test_model.py
 ```
 This command will input csv file containing 8 features and labels of data, which will be broken down into testing and training data with a ratio of 2:8
 
@@ -54,7 +90,7 @@ Then it should take in test data as its input then output predictions for the co
 In order to have you own custom input of data run the following
 
 ```bash
-python Concrete_Comp_Test_Beta2.py compile arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8
+python concrete_comp_run_cli.py compile arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8
 ```
 
 where the arguments are as follows:
@@ -73,7 +109,7 @@ From the listed arguments you should get you concrete compressive strength as a 
 Here is an example:
 
 ```bash
-python Concrete_Comp_Test_Beta2.py compile 2 5 0 0 45 67 8 85
+python concrete_comp_run_cli.py compile 2 5 0 0 45 67 8 85
 ```
 
 the results:

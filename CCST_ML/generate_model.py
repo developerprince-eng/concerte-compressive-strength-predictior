@@ -13,7 +13,7 @@ import os
 os.getcwd()
 os.listdir(os.getcwd())
 
-class GENERATE_MODEL:
+class generate_model:
     def __init__(self):
         self.is_model = True
 
