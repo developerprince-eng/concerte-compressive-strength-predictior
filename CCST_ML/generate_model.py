@@ -9,9 +9,7 @@ import matplotlib.pyplot as plt2
 import matplotlib.patches as mpatches
 from keras_visualizer import visualizer
 import os
-import threading
-import pandas as pd
-import numpy as np
+
 os.getcwd()
 os.listdir(os.getcwd())
 
@@ -24,15 +22,15 @@ class GENERATE_MODEL:
         tb_callbacks = tf.keras.callbacks.TensorBoard(log_dir="logs/relu_sequential_model", histogram_freq=1)
 
         model = keras.Sequential([
-                    keras.layers.Dense(8, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(16, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(32, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(40, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(48, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(48, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(40, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(32, activation=tf.nn.leaky_relu),
-                    keras.layers.Dense(16, activation=tf.nn.leaky_relu),
+                    keras.layers.Dense(8, activation=tf.nn.relu6),
+                    keras.layers.Dense(16, activation=tf.nn.relu6),
+                    keras.layers.Dense(32, activation=tf.nn.relu6),
+                    keras.layers.Dense(40, activation=tf.nn.relu6),
+                    keras.layers.Dense(48, activation=tf.nn.relu6),
+                    keras.layers.Dense(48, activation=tf.nn.relu6),
+                    keras.layers.Dense(40, activation=tf.nn.relu6),
+                    keras.layers.Dense(32, activation=tf.nn.relu6),
+                    keras.layers.Dense(16, activation=tf.nn.relu6),
                     keras.layers.Dense(1)
                 ])
 
@@ -55,8 +53,8 @@ class GENERATE_MODEL:
         # serialize weights to HDF5
         model.save_weights("jsn_model.h5")
         print("Saved model to disk")
-        model.save('CCST_predictor.h5')
-        CCST_model = keras.models.load_model('CCST_predictor.h5')
+        model.save('ccst_predictor_sequential_model.h5')
+        CCST_model = keras.models.load_model('ccst_predictor_sequential_model.h5')
         predictions = CCST_model.predict(x=test_data.values)
 
         print(test_data.values)
@@ -73,12 +71,12 @@ class GENERATE_MODEL:
             tb_callbacks2 = tf.keras.callbacks.TensorBoard(log_dir="logs/relu_model", histogram_freq=1)
 
             inputs = tf.keras.Input(shape=(8,))
-            x = tf.keras.layers.Dense(16, activation=tf.nn.leaky_relu)(inputs)
-            x1 = tf.keras.layers.Dense(16, activation=tf.nn.leaky_relu)(x)
-            x2 = tf.keras.layers.Dense(32, activation=tf.nn.leaky_relu)(x1)
-            x3 = tf.keras.layers.Dense(16, activation=tf.nn.leaky_relu)(x2)
-            x4 = tf.keras.layers.Dense(8, activation=tf.nn.leaky_relu)(x3)
-            outputs = tf.keras.layers.Dense(1, activation=tf.nn.leaky_relu)(x4)
+            x = tf.keras.layers.Dense(16, activation=tf.nn.relu6)(inputs)
+            x1 = tf.keras.layers.Dense(16, activation=tf.nn.relu6)(x)
+            x2 = tf.keras.layers.Dense(32, activation=tf.nn.relu6)(x1)
+            x3 = tf.keras.layers.Dense(16, activation=tf.nn.relu6)(x2)
+            x4 = tf.keras.layers.Dense(8, activation=tf.nn.relu6)(x3)
+            outputs = tf.keras.layers.Dense(1, activation=tf.nn.relu6)(x4)
             model2 = tf.keras.Model(inputs=inputs, outputs=outputs)
 
             model2.compile(loss='mean_squared_logarithmic_error',
@@ -100,8 +98,8 @@ class GENERATE_MODEL:
             # serialize weights to HDF5
             model2.save_weights("jsn_model_2.h5")
             print("Saved model to disk")
-            model2.save('CCST_predictor_2.h5')
-            CCST_model = keras.models.load_model('CCST_predictor_2.h5')
+            model2.save('ccst_predictor_model.h5')
+            CCST_model = keras.models.load_model('ccst_predictor_model.h5')
             predictions = CCST_model.predict(x=test_data.values)
 
             print(test_data.values)
@@ -115,17 +113,7 @@ class GENERATE_MODEL:
 
 
     def __generate__(self, train_labels, train_data, test_labels, test_data):
-
-        # t1 = threading.Thread(target=model1_thread, args=(train_labels, train_data, test_labels, test_data))
-        # t2 = threading.Thread(target=self.model2_thread, args=(train_labels, train_data, test_labels, test_data))
-
-        # t1.start()
-        # t2.start()
-
-        # t1.join()
-        # t2.join()
         self.model1_thread(train_labels, train_data, test_labels, test_data)
-
         print("Done")
 
 

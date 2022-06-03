@@ -1,23 +1,13 @@
 # Developer Prince - Concrete Compressive Strength Regression Machine Learning Demo
-""" This is Regression problem which make use of Data set with 8 Features inorder to Determine Concrete Compressve Strength(MPa, Mega Pascals) """
+""" This is Regression problem which make use of Data set with 8 Features in order to Determine Concrete Compressive Strength(MPa, Mega Pascals) """
 
 from __future__ import print_function, absolute_import, division
-from gc import callbacks
-
-import h5py
-from numpy import histogram, tri
 import pandas as pd
-import matplotlib.pyplot as plt
 import CCST_ML.generate_model as gm
-import tensorflow as tf
-from tensorflow import keras
-from keras.models import model_from_json
-import matplotlib.patches as mpatches
 import os
 os.getcwd()
 os.listdir(os.getcwd())
 
-tb_callbacks = tf.keras.callbacks.TensorBoard(log_dir="logs/relu", histogram_freq=1)
 data = pd.read_csv('data/ccs_data.csv', low_memory=False)
 data_label = pd.read_csv('data/ccs_labels.csv', low_memory=False)
 FEATURES = ['Cement', 'Blast Furnace Slag','Fly Ash','Water','Superplasticizer','Coarse Aggregate','Fine Aggregate','Age']
@@ -42,13 +32,9 @@ train_data = (train_data - mean) / std
 test_data = (test_data - mean) / std
 
 print(train_data)
-
 print(train_labels)
-
 print(test_data)
-
 print(test_labels)
-
 
 models = gm.GENERATE_MODEL()
 models.__generate__(train_labels=train_labels, train_data=train_data, test_labels=test_labels, test_data=test_data)

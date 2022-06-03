@@ -3,7 +3,7 @@
 ![developer_image](developer_shape.png)
 
 This is Repository for the purpose for an academic research project for IME at NUST
-with AI using Tensorflow
+with AI using Tensorflow.
 
 Please Take Note the Project was compiled by: DeveloperPrince (Prince Kudzai Maposa N01416165H) for practice purposes
 
