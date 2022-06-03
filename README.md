@@ -1,5 +1,8 @@
 # Concrete Compressive Strength DNN
 
+![nust_logo](logo_nust_png.png)
+
+
 ![developer_image](developer_shape.png)
 
 This is Repository for the purpose for an academic research project for IME at NUST
