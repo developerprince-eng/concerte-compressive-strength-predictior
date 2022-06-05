@@ -4,7 +4,6 @@ from operator import mod
 
 import tensorflow as tf
 from keras.models import Sequential
-from keras.layers import Dense, Activation
 from tensorflow import keras
 import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt2
