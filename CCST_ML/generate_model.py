@@ -3,6 +3,8 @@ from __future__ import print_function, absolute_import, division
 from operator import mod
 
 import tensorflow as tf
+from keras.models import Sequential
+from keras.layers import Dense, Activation
 from tensorflow import keras
 import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt2
@@ -21,7 +23,7 @@ class generate_model:
     def model1_thread(train_labels, train_data, test_labels, test_data):
         tb_callbacks = tf.keras.callbacks.TensorBoard(log_dir="logs/relu_sequential_model", histogram_freq=1)
 
-        model = keras.Sequential([
+        model = Sequential([
                     keras.layers.Dense(8, activation=tf.nn.elu),
                     keras.layers.Dense(16, activation=tf.nn.elu),
                     keras.layers.Dense(32, activation=tf.nn.relu6),
