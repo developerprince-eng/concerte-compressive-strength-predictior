@@ -5,8 +5,7 @@
 
 ![developer_image](developer_shape.png)
 
-This is Repository for the purpose for an academic research project for IME at NUST
-with AI using Tensorflow.
+This is Repository for the purpose for an academic research project for IME at NUST (National University of Science and Technology)
 
 Please Take Note the Project was compiled by: DeveloperPrince (Prince Kudzai Maposa N01416165H) for practice purposes
 
@@ -51,6 +50,8 @@ Recommended model is a 9 layer Diamond model:
 ![model](graph.png)
 
 ## Requirements
+
+Before you install the necessary frameworks you need to ensure that your machine has a minimum of 4GB of RAM, CPU that supports AVX and an additional hardware requirement of NVIDA graphics card which supports CUDA (which is an added advantage in computing).
 
 1. python 3.6
 2. graphviz (ensure this set up to be accessed globally on your machine)
