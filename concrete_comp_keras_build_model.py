@@ -38,3 +38,4 @@ print(test_labels)
 
 models = ccst_ml.generate_model()
 models.__generate__(train_labels=train_labels, train_data=train_data, test_labels=test_labels, test_data=test_data)
+

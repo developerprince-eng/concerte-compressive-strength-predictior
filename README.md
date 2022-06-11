@@ -45,9 +45,11 @@ For which a load is then applied to dry concrete until it raptures or breaks. Th
 
 in order to make use and test the model run
 
+The Project has a total of 4 possible models to be used and the best model is the model with ELU activation
+
 Recommended model is a 9 layer Diamond model:
 
-![model](graph.png)
+![model](graph_1.png)
 
 ## Requirements
 
