@@ -160,7 +160,7 @@ Please take note of the following contact details for further assistance
 ![developer_close_shape](developer_shape3.png)
 
 >Cellphone/Mobile Number: +263786808538/+263714272770
->Email address: princekudzaimaposa94@gmail.com
+>Email address: n01416165h@students.nust.ac.zw
 
 
 

@@ -20,7 +20,7 @@ def main():
 
                     test_data = np.array([[float(sys.argv[2]), float(sys.argv[3]),float(sys.argv[4]),float(sys.argv[5]),float(sys.argv[6]),float(sys.argv[7]),float(sys.argv[8]),float(sys.argv[9])]])
 
-                    CCST_model = tf.keras.models.load_model('CCST_predictor.h5')
+                    CCST_model = tf.keras.models.load_model('ccst_predictor_sequential_model1.h5')
 
                     predictions = CCST_model.predict(x=test_data)
                     results = predictions.tolist()

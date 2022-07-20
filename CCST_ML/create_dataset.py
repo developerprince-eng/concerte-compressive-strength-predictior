@@ -43,26 +43,4 @@ class resc_data:
         return(test_data)
 
 
-    def __obtain_training_label(self, path):
-        data_set = pd.read_csv(path, low_memory=False)
-        df = pd.DataFrame(data_set)
-
-        data_length = len(df.index)
-        train_data_len = int(data_length * 0.8)
-
-        train_label = df.iloc[0:train_data_len,:]
-
-        return(train_label)
-
-
-    def __obtain_testing_label(self, path):
-        data_set = pd.read_csv(path, low_memory=False)
-        df = pd.DataFrame(data_set)
-
-        data_length = len(df.index)
-        test_data_len = int(data_length * 0.2)
-
-        test_label = df.iloc[0:test_data_len,:]
-
-        return(test_label)
 
