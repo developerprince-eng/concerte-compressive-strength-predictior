@@ -8,7 +8,7 @@ beautifulsoup4==4.11.1
 bleach==5.0.0
 cached-property==1.5.2
 cachetools==5.1.0
-certifi==2022.5.18.1
+certifi==2022.12.7.1
 cffi==1.15.0
 charset-normalizer==2.0.12
 colorama==0.4.4
@@ -55,7 +55,7 @@ nbformat==5.4.0
 nest-asyncio==1.5.5
 notebook==6.4.11
 numpy==1.21.6
-oauthlib==3.2.0
+oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging==21.3
 pandas==1.1.5
@@ -65,7 +65,7 @@ pickleshare==0.7.5
 Pillow==9.1.1
 prometheus-client==0.14.1
 prompt-toolkit==3.0.29
-protobuf==3.20.1
+protobuf==3.20.2
 psutil==5.9.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
@@ -88,7 +88,7 @@ soupsieve==2.3.2.post1
 tensorboard==2.9.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow==2.9.0
+tensorflow==2.10.1
 tensorflow-estimator==2.9.0
 tensorflow-io-gcs-filesystem==0.26.0
 termcolor==1.1.0
@@ -101,6 +101,8 @@ typing_extensions==4.2.0
 urllib3==1.26.9
 wcwidth==0.2.5
 webencodings==0.5.1
-Werkzeug==2.1.2
+Werkzeug==2.2.3
 wrapt==1.14.1
 zipp==3.8.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
