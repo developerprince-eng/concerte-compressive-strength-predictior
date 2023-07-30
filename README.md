@@ -1,14 +1,13 @@
 # Concrete Compressive Strength DNN
 
-![nust_logo](logo_nust_png.png)
-
-
 ![developer_image](developer_shape.png)
 
-This is Repository for the purpose for an academic research project for IME at NUST (National University of Science and Technology)
+---
+![VScode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)
+---
 
-Please Take Note the Project was compiled by: DeveloperPrince (Prince Kudzai Maposa N01416165H) for practice purposes
-
+This is Repository for the purpose for experimentation and POC
+Please Take Note the Project was compiled by: DeveloperPrince 
 You can utilize the solutions to improve your understanding in AI using TensorFlow
 
 ## Note
@@ -160,7 +159,7 @@ Please take note of the following contact details for further assistance
 ![developer_close_shape](developer_shape3.png)
 
 >Cellphone/Mobile Number: +263786808538/+263714272770
->Email address: n01416165h@students.nust.ac.zw
+>Email address: prince@developer.co.zw
 
 
 
