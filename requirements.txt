@@ -27,7 +27,7 @@ google-pasta==0.2.0
 graphviz==0.20
 grpcio==1.46.3
 h5py==3.6.0
-idna==3.3
+idna==3.7
 importlib-metadata==4.11.4
 importlib-resources==5.7.1
 ipykernel==6.13.0
