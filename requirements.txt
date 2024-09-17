@@ -62,7 +62,7 @@ pandas==1.1.5
 pandocfilters==1.5.0
 parso==0.8.3
 pickleshare==0.7.5
-Pillow==9.1.1
+Pillow==9.2.0
 prometheus-client==0.14.1
 prompt-toolkit==3.0.29
 protobuf==3.20.1
@@ -104,3 +104,4 @@ webencodings==0.5.1
 Werkzeug==2.1.2
 wrapt==1.14.1
 zipp==3.8.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
