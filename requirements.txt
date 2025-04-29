@@ -87,7 +87,7 @@ termcolor==1.1.0
 terminado==0.15.0
 Theano==1.0.5
 tinycss2==1.1.1
-tornado==6.1
+tornado==6.3.2
 traitlets==5.2.1.post0
 typing_extensions==4.2.0
 urllib3==1.26.9
