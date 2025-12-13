@@ -18,7 +18,7 @@ defusedxml==0.7.1
 entrypoints==0.4
 fastjsonschema==2.15.3
 flatbuffers==1.12
-fonttools==4.33.3
+fonttools==4.61.0
 gast==0.4.0
 google-auth==2.6.6
 google-auth-oauthlib==0.4.6
@@ -87,10 +87,10 @@ termcolor==1.1.0
 terminado==0.15.0
 Theano==1.0.5
 tinycss2==1.1.1
-tornado==6.1
+tornado==6.5.3
 traitlets==5.2.1.post0
 typing_extensions==4.2.0
-urllib3==1.26.9
+urllib3==2.6.0
 wcwidth==0.2.5
 webencodings==0.5.1
 Werkzeug==2.1.2
